@@ -14,6 +14,7 @@
     "test:watch": "react-scripts test",
     "test:coverage": "react-scripts test --watchAll=false --coverage",
     "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
     "analyze": "source-map-explorer 'build/static/js/*.js'"
   },
   "dependencies": {
@@ -55,7 +56,10 @@
   "jest": {
     "coverageThreshold": {
       "global": {
-        "statements": 70
+        "statements": 70,
+        "branches": 60,
+        "functions": 65,
+        "lines": 70
       }
     }
   }
